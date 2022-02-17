@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/logo.svg" alt="Logo" />
+    </header>
+    <main class="content">
+      <div class="left">
+        <p class="splitter__text">Bill<span data-type="bill"></span></p>
+
+        <input type="text" placeholder="0" class="input_bill" />
+        <p class="splitter__text">Select Tip %</p>
+        <div class="button-tip" data-type="">
+          <button class="btn_tips">5%</button>
+          <button class="btn_tips">10%</button>
+          <button class="btn_tips">15%</button>
+          <button class="btn_tips">25%</button>
+          <button class="btn_tips">50%</button>
+          <input type="text" placeholder="Custom" class="custom-tip" />
+        </div>
+        <p class="splitter__text">
+          Number of People <span data-type="person"></span>
+        </p>
+
+        <input type="text" placeholder="0" class="input_person" />
+      </div>
+      <div class="right">
+        <div class="splitter__tip-amount">
+          <div>
+            <p class="splitter__tip-amount-text">Tip Amount</p>
+            <span>/ person</span>
+          </div>
+          <div class="splitter__tip">
+            <h2 class="splitter__result splitter__result-person">R$ 0.00</h2>
+          </div>
+        </div>
+        <div class="splitter__tip-amount">
+          <div>
+            <p class="splitter__tip-amount-text">Tip Amount</p>
+            <span>/ total</span>
+          </div>
+          <div class="splitter__tip">
+            <h2 class="splitter__result splitter__result-total">R$ 0.00</h2>
+          </div>
+        </div>
+
+        <button class="btn_reset">Reset</button>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="http://github.com/mairaz">Maira</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
