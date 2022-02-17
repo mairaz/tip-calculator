@@ -50,6 +50,7 @@ input{
     color:hsl(186, 14%, 43%);
     position:relative;
     font-size:1.5rem;
+    font-weight:700;
 }
 
 .content{    
@@ -76,10 +77,10 @@ input{
     flex: 1 1 0px; 
     background:hsl(183, 100%, 15%);   
     border-radius:8px;
-    padding:40px;
+    padding:2rem;
     display:flex;
     flex-direction: column;
-   justify-content:space-between;
+   justify-content:space-evenly;
 }
 
 
@@ -108,7 +109,8 @@ input{
 
 .splitter__tip-amount{
     display:grid;
-    grid-template-columns: 1fr 2fr
+    grid-template-columns: 1fr 2fr;
+    align-items:center;
 }
 
 .splitter__result{
@@ -158,10 +160,13 @@ span.notification{
     bottom:0;
 }
 
-@media (max-width:750px ){
+@media (max-width:900px){
     html{
         font-size:50%;
     }
+}
+
+@media (max-width:650px ){  
     .content{
         flex-direction: column;
     }
